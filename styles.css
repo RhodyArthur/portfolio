@@ -62,7 +62,7 @@ nav ul li a{
 }
 
 .hero {
-    padding: 6.25rem 5rem;
+    padding: 6.25rem 5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +96,7 @@ nav ul li a{
     flex: 1;
 }
 
-.icons {
+.icons,.col {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -112,4 +112,47 @@ nav ul li a{
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+
+.skills-title {
+    border-radius: 12px;
+    padding: 0.25rem 1.25rem;
+    background-color: #E5E7EB;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.msg {
+    font-size: 1.25rem;
+    color: #4B5563;
+}
+
+.scrolling-images {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: scrollImage 5s ease-out forwards;
+}
+
+@keyframes scrollImage {
+    0% {
+        transform: translateX(100%);
+    }
+    
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.scrolling-images img {
+    cursor: pointer;
 }
